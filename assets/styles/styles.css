@@ -23,6 +23,12 @@ h1 {
 }
 
 .popup-container {
+  background-color: #282b30; /* Set background color */
+  border-style: solid;
+  border-width: 2px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: #7289da;
   width: 400px;
   height: 300px;
   padding: 20px;
