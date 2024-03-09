@@ -1,10 +1,46 @@
+@font-face {
+  font-family: "Ai";
+  src: url("../fonts/Ai.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MainFont";
+  src: url("../fonts/telegrama.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "MainFont", sans-serif;
+}
+
+h1 {
+  font-family: "Ai", sans-serif;
 }
 
 .popup-container {
   width: 400px;
   height: 300px;
   padding: 20px;
+  text-align: center; /* Center align content */
+}
+
+/* Put the logo in the top left */
+.logo {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  margin: 0;
+  top: 0;
+  left: 40px;
+  position: absolute;
 }

@@ -9,10 +9,16 @@
   },
   "action": {
     "default_icon": "assets/images/icon48.png",
-    "default_popup": "src/popup/popup.html",
+    "default_popup": "popup.html",
     "default_title": "Click to interact with the extension"
   },
   "permissions": ["activeTab", "storage"],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/images/icon128.png"],
+      "matches": ["*://*/*"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
