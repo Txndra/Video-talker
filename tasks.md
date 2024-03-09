@@ -4,8 +4,8 @@
 
 ### Define Project Scope
 
-- [ ] Outline functionality
-- [ ] Define key features
+- [x] Outline functionality
+- [x] Define key features
 
 ### Research YouTube API
 
