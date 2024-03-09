@@ -12,7 +12,7 @@
     "default_popup": "src/popup/popup.html",
     "default_title": "Click to interact with the extension"
   },
-  "permissions": ["activeTab", "storage", "https://www.googleapis.com/"],
+  "permissions": ["activeTab", "storage"],
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
@@ -20,7 +20,6 @@
     }
   ],
   "background": {
-    "scripts": ["src/background/background.js"],
-    "persistent": false
+    "service_worker": "src/background/background.js"
   }
 }
