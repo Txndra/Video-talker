@@ -15,13 +15,13 @@
 
 ### Create Extension Files
 
-- [ ] Manifest.json
-- [ ] Popup.html
-- [ ] Popup.js
+- [x] Manifest.json
+- [x] Popup.html
+- [x] Popup.js
 
 ### Manifest File
 
-- [ ] Define basic extension properties.
+- [x] Define basic extension properties.
 - [ ] Specify necessary permissions.
 
 ### Popup HTML and JavaScript
