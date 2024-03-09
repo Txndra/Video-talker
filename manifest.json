@@ -4,7 +4,23 @@
   "version": "1.0",
   "description": "A Chrome Extension that uses AI to let you talk to videos.",
   "icons": {
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
+  },
+  "action": {
+    "default_icon": "assets/images/icon48.png",
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Click to interact with the extension"
+  },
+  "permissions": ["activeTab", "storage", "https://www.googleapis.com/"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["src/content/content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["src/background/background.js"],
+    "persistent": false
   }
 }
