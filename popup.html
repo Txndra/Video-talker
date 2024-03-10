@@ -8,13 +8,20 @@
   </head>
   <body>
     <div class="popup-container">
-      <img
-        src="assets/images/icon128.png"
-        alt="VideoTalker Logo"
-        class="logo"
-      />
+      <img src="assets/images/icon128.png" alt="VideoTalker" class="logo" />
       <h1>VideoTalker</h1>
-      <p>Write your message below!</p>
+      <p id="writeMessage"></p>
+      <input
+        type="text"
+        id="promptInput"
+        placeholder="Enter your prompt..."
+        class="prompt-box"
+      />
+      <img
+        src="assets/images/sendArrow.png"
+        alt="sendArrow"
+        class="sendArrow"
+      />
     </div>
     <script src="src/popup/popup.js"></script>
   </body>
