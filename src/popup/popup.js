@@ -25,3 +25,6 @@ function initializeTypewriter(elementId, message) {
     console.error(`Element with ID ${elementId} not found.`);
   }
 }
+
+// Initial message
+initializeTypewriter("writeMessage", "Write your message below!");
