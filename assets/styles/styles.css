@@ -26,21 +26,30 @@ body {
   font-family: "MainFont", sans-serif;
 }
 
-h1 {
-  font-family: "Ai", sans-serif;
-}
-
 /* Styling for the container */
 .popup-container {
   background-color: #282b30; /* Set background color */
   border: 2px solid #7289da; /* Simplify border styling */
   border-width: 2px 10px; /* Adjust left and right border width */
   width: 400px;
-  height: 300px;
+  height: 450px;
   padding: 20px;
   text-align: center;
   position: relative; /* Ensure relative positioning for absolute child elements */
   resize: vertical;
+}
+
+h1 {
+  font-family: "Ai", sans-serif;
+  margin: 10px 0 0 40px; /* Adjust margin for better spacing */
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+/* Paragraph styles */
+p {
+  color: #fff; /* Set text color for better contrast */
+  margin-top: 40px; /* Move the paragraph down */
 }
 
 /* Logo styles */
@@ -56,22 +65,8 @@ h1 {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 282px;
+  top: 450px;
   right: 30px;
-}
-
-/* Heading styles */
-h1 {
-  margin: 10px 0 0 40px; /* Adjust margin for better spacing */
-  position: absolute;
-  top: 10px;
-  left: 40px;
-}
-
-/* Paragraph styles */
-p {
-  color: #fff; /* Set text color for better contrast */
-  margin-top: 40px; /* Move the paragraph down */
 }
 
 textarea {
@@ -95,7 +90,7 @@ textarea:focus {
 }
 .prompt-box {
   width: 80%;
-  margin-top: 200px;
+  margin-top: 350px;
   padding: 10px;
   font-size: 14px;
 }
