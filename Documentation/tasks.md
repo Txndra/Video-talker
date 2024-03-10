@@ -22,7 +22,7 @@
 ### Manifest File
 
 - [x] Define basic extension properties.
-- [ ] Specify necessary permissions.
+- [x] Specify necessary permissions.
 
 ### Popup HTML and JavaScript
 
