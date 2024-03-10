@@ -26,7 +26,7 @@
 
 ### Popup HTML and JavaScript
 
-- [ ] Design a simple user interface for the extension popup.
+- [x] Design a simple user interface for the extension popup.
 - [ ] Implement basic logic for triggering actions when the button is clicked.
 - [ ] Design and implement UI for users to create custom prompts.
 - [ ] Implement JavaScript logic to handle user prompts in the popup.
@@ -54,7 +54,7 @@
 
 ## Set Up Flask Backend
 
-- [ ] Install Flask (pip install flask).
+- [x] Install Flask (pip install flask).
 
 ### Create Flask App
 
