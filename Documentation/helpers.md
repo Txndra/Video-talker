@@ -6,3 +6,4 @@
 
 ### [Discord colour palette](https://www.color-hex.com/color-palette/28549)
 
+### [Pass Js variables to flask](https://www.geeksforgeeks.org/pass-javascript-variables-to-python-in-flask/)
