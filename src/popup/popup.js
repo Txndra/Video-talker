@@ -37,6 +37,12 @@ function logInput() {
   console.log(promptInput.value);
 }
 
+//Function to send user prompt to background.js
+function sendPrompt() {
+  const promptInput = document.getElementById("promptInput");
+  chrome.runtime.sendMessage({ prompt: promptInput.value });
+}
+
 //Function to check if the user is on youtube
 function checkTabURL() {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
