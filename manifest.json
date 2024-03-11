@@ -13,6 +13,10 @@
     "default_title": "Click to interact with the extension"
   },
   "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://developers.google.com/youtube/v3"
+  ],
   "web_accessible_resources": [
     {
       "resources": ["assets/images/icon128.png"],
