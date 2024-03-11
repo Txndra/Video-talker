@@ -1,4 +1,8 @@
-console.log("popup.js loaded");
+console.log("popup loaded");
+
+//make send arrow clickable and log prompt input
+const sendArrow = document.querySelector(".sendArrow");
+sendArrow.addEventListener("click", logInput);
 
 // Function to initialize the typewriter effect on the specified element
 function initializeTypewriter(elementId, message) {
@@ -28,33 +32,12 @@ function initializeTypewriter(elementId, message) {
   }
 }
 
-// Function to display user prompts
-function displayPrompt(promptText) {
-  const promptContainer = document.getElementById("promptContainer");
-
-  // Create a new div element for the prompt
-  const promptDiv = document.createElement("div");
-  promptDiv.className = "user-prompt";
-  promptDiv.textContent = promptText;
-
-  // Append the new prompt to the container
-  promptContainer.appendChild(promptDiv);
-}
-
 //Function to log input from promptInput
 function logInput() {
   const promptInput = document.getElementById("promptInput");
-  const userPrompt = promptInput.value;
-  displayPrompt(userPrompt);
   console.log(promptInput.value);
-
-  //additional functionality for sending prompt to content script, AI processing etc
-
-  promptInput.value = ""; //clear prompt input
 }
 
 // Initial message
 initializeTypewriter("writeMessage", "Write your message below!");
 //make send arrow clickable
-const sendArrow = document.getElementById("sendArrow");
-sendArrow.addEventListener("click", logInput);
