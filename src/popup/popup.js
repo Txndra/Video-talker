@@ -1,3 +1,7 @@
+//make send arrow clickable
+const sendArrow = document.querySelector(".sendArrow");
+sendArrow.addEventListener("click", logInput);
+
 // Function to initialize the typewriter effect on the specified element
 function initializeTypewriter(elementId, message) {
   function typewriterEffect(text, element) {
@@ -26,5 +30,12 @@ function initializeTypewriter(elementId, message) {
   }
 }
 
+//Function to log input from promptInput
+function logInput() {
+  const promptInput = document.getElementById("promptInput");
+  console.log(promptInput.value);
+}
+
 // Initial message
 initializeTypewriter("writeMessage", "Write your message below!");
+//make send arrow clickable
