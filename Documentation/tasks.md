@@ -27,8 +27,8 @@
 ### Popup HTML and JavaScript
 
 - [x] Design a simple user interface for the extension popup.
-- [ ] Implement basic logic for triggering actions when the button is clicked.
-- [ ] Design and implement UI for users to create custom prompts.
+- [-] Implement basic logic for triggering actions when the button is clicked.
+- [x] Design and implement UI for users to create custom prompts.
 - [ ] Implement JavaScript logic to handle user prompts in the popup.
 - [ ] Send user prompts to the backend for processing.
 - [ ] Integrate NLP model to analyze user prompts.
