@@ -1,5 +1,4 @@
 console.log("popup.js loaded");
-
 //make send arrow clickable and log prompt input
 const sendArrow = document.querySelector(".sendArrow");
 sendArrow.addEventListener("click", logInput);

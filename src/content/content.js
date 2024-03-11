@@ -1,22 +1,15 @@
-console.log("content.js loaded");
-window.addEventListener("DOMContentLoaded", (event) => {
-  // Check if the user is watching a YouTube video and retrieve the video ID
-  if (window.location.href.indexOf("youtube.com/watch") > -1) {
-    //console log for debugging
-    console.log("This is a YouTube video page!");
-    // Extract video ID from the URL
-    var videoId = window.location.href.split("v=")[1];
-    var ampersandPosition = videoId.indexOf("&");
+// Check if the current page is a YouTube video page
+if (window.location.href.includes("youtube.com/watch")) {
+  // Extract the video ID from the URL
+  const videoId = new URLSearchParams(window.location.search).get("v");
 
-    // Remove any additional parameters after the video ID
-    if (ampersandPosition !== -1) {
-      videoId = videoId.substring(0, ampersandPosition);
-    }
+  console.log("Current page is a YouTube video page.");
+  console.log("Video ID:", videoId);
 
-    // Log the video ID to the console
-    console.log("videoId: " + videoId);
-
-    // Send the video ID as a message to the background script
-    chrome.runtime.sendMessage({ videoId: videoId });
-  }
-});
+  // Send a message to the background script with the video ID
+  chrome.runtime.sendMessage({ videoId: videoId }, (response) => {
+    console.log("Message sent to background script. Response:", response);
+  });
+} else {
+  console.log("Not a YouTube video page.");
+}
