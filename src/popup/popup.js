@@ -37,6 +37,21 @@ function logInput() {
   console.log(promptInput.value);
 }
 
+//Function to check if the user is on youtube
+function checkTabURL() {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    const currentURL = tabs[0].url;
+    console.log("Checking URL");
+    console.log("Current URL:", currentURL);
+
+    if (currentURL.includes("youtube.com")) {
+      console.log("You are on youtube");
+    }
+  });
+}
+
 // Initial message
 initializeTypewriter("writeMessage", "Write your message below!");
-//make send arrow clickable
+document.addEventListener("DOMContentLoaded", function () {
+  checkTabURL();
+});
