@@ -40,7 +40,8 @@ function logInput() {
 //Function to send user prompt to background.js
 function sendPrompt() {
   const promptInput = document.getElementById("promptInput");
-  chrome.runtime.sendMessage({ prompt: promptInput.value });
+  const userInput = promptInput.value;
+  chrome.runtime.sendMessage("prompt sent");
 }
 
 //Function to check if the user is on youtube
