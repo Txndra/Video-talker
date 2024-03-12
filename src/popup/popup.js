@@ -1,7 +1,8 @@
-console.log("popup loaded");
+//console.log("popup loaded");
 //make send arrow clickable and log prompt input
 const sendArrow = document.querySelector(".sendArrow");
 sendArrow.addEventListener("click", logInput);
+sendArrow.addEventListener("click", sendPrompt);
 
 // Function to initialize the typewriter effect on the specified element
 function initializeTypewriter(elementId, message) {
@@ -41,7 +42,7 @@ function logInput() {
 function sendPrompt() {
   const promptInput = document.getElementById("promptInput");
   const userInput = promptInput.value;
-  chrome.runtime.sendMessage("prompt sent");
+  chrome.runtime.sendMessage(userInput);
 }
 
 //Function to check if the user is on youtube
