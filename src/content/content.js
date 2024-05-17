@@ -1,4 +1,3 @@
-debugger;
 console.log("content.js loaded");
 
 // content.js
