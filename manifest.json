@@ -12,7 +12,7 @@
     "default_popup": "popup.html",
     "default_title": "Click to interact with the extension"
   },
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["activeTab", "storage", "scripting"],
   "host_permissions": [
     "https://www.youtube.com/*",
     "https://developers.google.com/youtube/v3"

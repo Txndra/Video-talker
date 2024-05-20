@@ -4,6 +4,7 @@ console.log("background.js loaded");
 // Listen for messages from the popup
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   console.log("Message received in background.js");
+  console.log(message);
   if (message.action === "videoInfo") {
     // Received video info from content script
     const videoTitle = message.title;
